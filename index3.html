@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> L'impact du numérique sur l'environnement</h1>
+        </header>
+        <nav>
+            <ul>
+                <li> <a href="index.html"> Présentation </a></li>
+                <li> <a href="index2.html"> Impact </a></li>
+                <li> <a href="index3.html"> Solutions </a></li> 
+            </ul>
+        </nav>
+        <aside> 
+        </aside>
+        <main>
+            <div class="box">
+            <div class="titre-main"><h3>Comment réduire l’empreinte carbone d’un site web</h3>
+            </div>
+            <ul>
+                <li class="gros-titre"><h4>Réduire le poids du site</h4></li>
+                <li>Optimiser les images (compressées, format WebP/AVIF, tailles adaptées).</li>
+                <li>Charger les vidéos sur demande uniquement (lazy load).</li>
+                <li>Limiter l’usage des frameworks lourds si non nécessaires.</li>
+                <li>Réduire les JavaScript inutiles (éviter jQuery si pas utile, pur JS ou frameworks modernes optimisés).</li>
+                <li> Exemple de chargement paresseux |
+                    img src="image.webp" loading="lazy" alt="Description"|</li>
+            </ul>
+        </div>
+        <div class="box">
+            <ul>
+                <li class="gros-titre"><h4>Utiliser un hébergeur vert</h4></li>
+                <li>Exemple : Infomaniak, o2switch, PlanetHoster, GreenGeeks, etc.</li>
+                <li>Vérifie via The Green Web Foundation.</li>
+            </ul>
+        </div>
+        <div class="box">
+            <ul>
+                <li class="gros-titre"><h4>Limiter les requêtes réseau</h4></li>
+                <li>Fusionner les fichiers CSS/JS.</li>
+                <li>Utiliser la mise en cache (<meta> ou en HTTP headers).</li>
+                <li>Minimiser les polices personnalisées (ex. Google Fonts coûteux en poids).</li>
+                <li>Charger une seule variante de police
+                    link href="#" rel="stylesheet"</li>
+            </ul>
+        </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2025 MonSite. Tous droits réservés.</p>
+                <ul class="footer-links">
+                  <li><a href="#">Mentions légales</a></li>
+                  <li><a href="#">Politique de confidentialité</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+        </footer>
+    </div>
+</body>
+</html
