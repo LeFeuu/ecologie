@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html, body {
+    height: 100%;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+header {
+    background-color: rgb(60 59 59 / 86%);
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    height: auto;
+    color: rgb(255, 255, 255);
+    box-shadow:  0px 0px 20px 2px rgb(0 0 0 / 38%);
+
+}
+
+nav {
+    background-color:  rgb(153 153 158);
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow:  0px 0px 20px 2px rgb(0 0 0 / 38%);
+}
+aside {
+    background-color:  rgb(153 153 158);
+    grid-area: aside;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 20px;
+    box-shadow:  0px 0px 20px 2px rgb(0 0 0 / 20%);
+
+}
+footer {
+    background-color: rgb(0, 0, 0);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 38%);
+
+}
+main {
+    background-color: rgb(255, 255, 255);
+    grid-area: main;
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 30px;
+    box-shadow: inset 0px 0px 20px 2px rgb(0 0 0 / 38%);
+
+}
+
+.container {
+display: grid;
+grid-template-columns: 4fr 4fr 4fr 2fr;
+grid-template-rows: 4fr 2fr 14fr 2fr ;
+grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    " main main main aside"
+    "footer footer footer footer";
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;   
+
+
+}
